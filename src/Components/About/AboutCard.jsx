@@ -14,20 +14,22 @@ function AboutCard(props) {
               onClick={() => popup(item)}
               className="pcard  h-[400px] w-[275px] backdrop-blur-md backdrop-brightness-[80%] hover:backdrop-brightness-[60%] border-2 rounded-xl border-[#E1E1E1] border-opacity-30 flex justify-around items-center flex-col text-[#d0f0ea] hover:text-[#ffffff] hover:scale-[1.05] transform transition duration-500 ease-in-out"
             >
-              <div className="mt-3 rounded-full h-[195px] w-[195px]">
-                <img className="h-[195px] w-[195px] rounded-full object-cover" src={props.pic} />
+              <div className="mt-[12px] rounded-xl h-[230px] w-[230px]">
+                <img className="h-[230px] w-[230px] rounded-xl object-cover" src={props.pic} />
               </div>
-              <div className="flex items-center flex-col">
+              <div className="flex items-center justify-center text-center flex-col">
                 <p className=" text-3xl">{props.named}</p>
               
                 <p className=" text-2xl">{props.work}</p>
               </div>
               <div className="flex w-[210px] justify-around">
                 {/* <FontAwesomeIcon className="size-7" icon={faInstagram} /> */}
-                <FontAwesomeIcon className="size-7 hover:text-[#ccfff0] duration-500 ease-in-out hover:scale-[1.1] transform" icon={faInstagram} />
-                <FontAwesomeIcon className="size-7 hover:text-[#ccfff0] duration-500 ease-in-out hover:scale-[1.1] transform " icon={faGithub} />
-                <FontAwesomeIcon className="size-7 hover:text-[#ccfff0] duration-500 ease-in-out hover:scale-[1.1] transform" icon={faLinkedin} />
-                <FontAwesomeIcon className="size-7 hover:text-[#ccfff0] duration-500 ease-in-out hover:scale-[1.1] transform" icon={faEnvelope} />
+                {props.Instagram?<a href={props.Instagram}><FontAwesomeIcon className="size-7 hover:text-[#ccfff0] duration-500 ease-in-out hover:scale-[1.1] transform" icon={faInstagram} title="Instagram" /></a>:''}
+                {props.GitHub?<a href={props.GitHub}><FontAwesomeIcon className="size-7 hover:text-[#ccfff0] duration-500 ease-in-out hover:scale-[1.1] transform " icon={faGithub} title="GitHub"/></a>:''}
+                {props.LinkedIn?<a href={props.LinkedIn}> <FontAwesomeIcon className="size-7 hover:text-[#ccfff0] duration-500 ease-in-out hover:scale-[1.1] transform" icon={faLinkedin} title="LinkedIn" /></a>:''}
+                {props.id?<a href={'https://mail.google.com/mail/?view=cm&to='+props.id+'@iiit-bh.ac.in'}>
+                  <FontAwesomeIcon className="size-7 hover:text-[#ccfff0] duration-500 ease-in-out hover:scale-[1.1] transform" icon={faEnvelope} title={"Mail "+props.id} />
+                </a>:''}
               </div>
             </div>
             </div>

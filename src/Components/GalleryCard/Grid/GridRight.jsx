@@ -7,6 +7,7 @@ import { TiSocialTwitter } from "react-icons/ti";
 import image from '../../../assets/Nature.jpg';
 import Default from '../../../assets/default.jpg'
 import { useLocation } from 'react-router-dom';
+import '../../Home/home.css';
 
 export const RevealBentoR = () => {
  
@@ -72,10 +73,10 @@ const HeaderBlock = () => {
     <div
       id="message"
       rows="8"
-      className="p-2.5 w-full text-xl rounded-lg   focus:border-transparent focus:ring-0 focus:outline-none resize-none placeholder-opacity-100 placeholder-gray-500 bg-[#B2D7D0] bg-opacity-10 mt-5 text-[#FFF4B5] text-justify-center "
+      className="p-2.5 w-full text-lg rounded-lg   focus:border-transparent focus:ring-0 focus:outline-none resize-none placeholder-opacity-100 placeholder-gray-500 bg-[#B2D7D0] bg-opacity-10 mt-5 text-[#d0f0ea] text-justify solway"
       >
-      <p className="border-[#002f26] text-center text-3xl text-white ">{title}</p>
-       {para}
+      <p className="border-[#002f26] text-center text-3xl text-white font-extrabold sofia">{title}</p>
+      {para}
     </div>
   </Block>
 );
