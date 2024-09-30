@@ -14,8 +14,9 @@ function AboutCard(props) {
               onClick={() => popup(item)}
               className="pcard  h-[400px] w-[275px] backdrop-blur-md backdrop-brightness-[80%] hover:backdrop-brightness-[60%] border-2 rounded-xl border-[#E1E1E1] border-opacity-30 flex justify-around items-center flex-col text-[#d0f0ea] hover:text-[#ffffff] hover:scale-[1.05] transform transition duration-500 ease-in-out"
             >
-                            <div className="mt-3 rounded-full h-[195px] w-[195px]"> 
+              <div className="mt-3 rounded-full h-[195px] w-[195px]"> 
                  <img className="h-[195px] w-[195px] rounded-full object-cover" src={props.pic} />
+              </div>
               <div className="flex items-center justify-center text-center flex-col">
                 <p className=" text-3xl">{props.named}</p>
               
