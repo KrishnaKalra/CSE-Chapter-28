@@ -36,7 +36,11 @@ function header() {
   };
   if (isAuthenticated) {
     const email = user.email;
-    const BranchChange=["b323027","b523055","b423024","b223048","b523068"]
+    //Branch Change IDs
+    //27 Batch- "b323027","b523055","b423024","b223048","b523068"
+    //26 Batch- "b222032","b322006","b322020","b322037","b422001","b522034","b222010","b322029","b322035","b422019"
+    //25 Batch- "b221021","b221029","b321031","b421037","b421054","b521002"
+    const BranchChange=["b323027","b523055","b423024","b223048","b523068","b222032","b322006","b322020","b322037","b422001","b522034","b222010","b322029","b322035","b422019"]
     if (email.slice(0, 2) != "b1"&&!BranchChange.includes(email.slice(0,7)) ) {
       alert("Email Invailid");
       logout();
@@ -63,7 +67,7 @@ function header() {
           </div>
           <div className="header flex">
             <ul
-              className={`  flex ${hamburger} fixed top-0 right-0 sm:visible sm:static z-20 flex-col sm:flex-row text-[2.25rem] mt-6 mr-8 font-bold lg:space-x-8 h-20 max-w-[600px] max-h-20`}
+              className={`  flex ${hamburger} bg-[#B2D7D0] bg-opacity-40 backdrop-blur-xl rounded-2xl w-[90vw] absolute left-[46%] p-10 translate-x-[-45%] top-[10%] text-center sm:visible font-bold sm:static z-20 flex-col sm:flex-row text-[2.25rem] lg:mt-6 lg:mr-8 lg:space-x-8 lg:h-20 lg:max-w-[600px] lg:max-h-20 lg:bg-transparent lg:translate-x-0 lg:p-0`}
             >
               <li onClick={DisableBar}>
                 <NavLink
@@ -135,8 +139,7 @@ function header() {
 
             <FontAwesomeIcon
               icon={faBars}
-              style={{ color: "#004040" }}
-              className="mt-[1.8rem] mx-4 h-10 sm:hidden hover:cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
+              className="mt-[1.8rem] mx-4 h-10 text-[##004040] sm:hidden hover:cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
               onClick={EnableBar}
             />
           </div>

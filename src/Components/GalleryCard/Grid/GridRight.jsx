@@ -7,6 +7,7 @@ import { TiSocialTwitter } from "react-icons/ti";
 import image from '../../../assets/Nature.jpg';
 import Default from '../../../assets/default.jpg'
 import { useLocation } from 'react-router-dom';
+import '../../Home/home.css';
 
 export const RevealBentoR = () => {
  
@@ -65,16 +66,16 @@ const HeaderBlock = () => {
   const para = location.state && location.state.para;
   return(
   
-  <Block className="col-span-12  row-span-2 md:col-span-6 bg-black bg-opacity-50">
-    <h1 className="mb-2 border-white ">
+  <Block className="col-span-12  row-span-2 md:col-span-6 bg-[#FFF3] lg:bg-[#0008]">
+    <h1 className="mb-2 ">
       <img className=" object-cover" src={smalpics.pic1}></img>
     </h1>
+    <p className="mt-5 mb-2 text-center text-4xl text-white solway font-bold uppercase">{title}</p>
     <div
       id="message"
       rows="8"
-      className="p-2.5 w-full text-xl rounded-lg   focus:border-transparent focus:ring-0 focus:outline-none resize-none placeholder-opacity-100 placeholder-gray-500 bg-[#B2D7D0] bg-opacity-10 mt-5 text-[#FFF4B5] text-justify-center "
+      className="p-2.5 w-full text-xl rounded-lg   focus:border-transparent focus:ring-0 focus:outline-none resize-none placeholder-opacity-100 placeholder-gray-500 lg:bg-[#B2D7D0] lg:bg-opacity-10 text-justify solway text-[#d0f0ea] text-justify-center"
       >
-      <p className="border-[#002f26] text-center text-3xl text-white ">{title}</p>
        {para}
     </div>
   </Block>
@@ -92,7 +93,7 @@ const SocialsBlock = () =>{
         rotate: -1.5+"deg",
         scale: 1.06,
       }}
-      className="col-span-6 bg-black bg-opacity-50  pb-[40px] md:col-span-3"
+      className="col-span-6 bg-[#FFF3] lg:bg-[#0008]  pb-[40px] md:col-span-3"
     >
       <div
         href="#"
@@ -108,7 +109,7 @@ const SocialsBlock = () =>{
         rotate: 1.5+"deg",
         scale: 1.06,
       }}
-      className="col-span-6 bg-black bg-opacity-50  pb-[40px] md:col-span-3"
+      className="col-span-6 bg-[#FFF3] lg:bg-[#0008]  pb-[40px] md:col-span-3"
 
 
     >
@@ -123,7 +124,7 @@ const SocialsBlock = () =>{
         rotate: -1.5+"deg",
         scale:1.06,
       }}
-      className="col-span-6 bg-black bg-opacity-50  pb-[40px] md:col-span-3"
+      className="col-span-6 bg-[#FFF3] lg:bg-[#0008]  pb-[40px] md:col-span-3"
 
     >
       <div
@@ -138,7 +139,7 @@ const SocialsBlock = () =>{
         rotate: 1.5+"deg",
         scale: 1.06,
       }}
-      className="col-span-6 bg-black bg-opacity-50  pb-[40px] md:col-span-3"
+      className="col-span-6 bg-[#FFF3] lg:bg-[#0008]  pb-[40px] md:col-span-3"
 
     >
       <div

@@ -14,7 +14,7 @@ function home() {
             <img className='lg:mb-[20%] h-[25vh] lg:h-[50vh] w-[80vw]' src={ChapterLogo}/>
         </div>
         <div class="text-[#d0f0ea] ml-[10%] mr-[10%] flex flex-col items-center justify-center gap-5 text-justify">
-        <h1 class="text-center text-3xl ethno font-semibold tracking-wider lg:text-5xl">
+        <h1 class="text-center text-3xl stroke-col text-[#d0f0ea] ethno font-semibold tracking-wider lg:text-5xl">
           <Typewriter
           words={['WELCOME FRESHERS...','A HEARTY WELCOME TO THE CSE CHAPTER \'28']}
           loop={0}
@@ -23,7 +23,7 @@ function home() {
           delaySpeed={5000}
           />
           </h1>
-          <p class=" text-lg solway lg:text-3xl">
+          <p class=" text-lg poppins tracking-[0.018em] lg:text-3xl">
             This bootcamp is designed to spark your excitement and curiosity about knowing your seniors and about the college life which offers a vibrant, interactive glimpse into what awaits you. This highlights the exciting side of college life, featuring fun events, college fests, inspiring student stories, and opportunities.
             {/* Our team has poured their hearts into making this website to give you a genuine glimpse into college life and help you feel excited about your future here. We hope you enjoy exploring it as much as we enjoyed making it for you!!! */}
           </p>
