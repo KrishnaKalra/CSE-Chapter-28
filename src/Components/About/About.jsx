@@ -81,7 +81,7 @@ We hope this platform serves as a helpful resource for staying connected, inform
         LinkedIn="https://www.linkedin.com/in/priyanshu01shekhar01/"
         GitHub="https://github.com/TitoTimber"
         email="b323027@iiit-bh.ac.in"
-        work=" Frontend"
+        work=" Frontend "
       />
       <AboutCard named="Vanessa G Reddy"
         pic={vanessa}
