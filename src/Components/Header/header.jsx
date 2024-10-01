@@ -67,13 +67,13 @@ function header() {
           </div>
           <div className="header flex">
             <ul
-              className={`  flex ${hamburger} bg-[#B2D7D0] bg-opacity-40 backdrop-blur-xl rounded-2xl w-[90vw] absolute left-[46%] p-10 translate-x-[-45%] top-[10%] text-center sm:visible font-bold sm:static z-20 flex-col sm:flex-row text-[2.25rem] lg:mt-6 lg:mr-8 lg:space-x-8 lg:h-20 lg:max-w-[600px] lg:max-h-20 lg:bg-transparent lg:translate-x-0 lg:p-0`}
+              className={`flex ${hamburger} bg-[#B2D7D0] bg-opacity-60 backdrop-blur-xl rounded-2xl w-[90vw] absolute left-[46%] p-10 translate-x-[-45%] top-[11%] text-center sm:visible font-bold sm:static z-20 flex-col sm:flex-row text-[2.25rem] lg:mt-6 lg:mr-14 lg:space-x-8 lg:justify-end lg:h-20 lg:max-w-[600px] lg:max-h-20 lg:bg-transparent lg:translate-x-0 lg:p-0 transform duration-100 ease-in-out`}
             >
               <li onClick={DisableBar}>
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `block pr-4 pl-3 duration-200 ${
+                    `block pr-4 pl-3 lg:duration-200 ${
                       isActive ? "textcolor underline" : "lightcolor"
                     }    hover:bg-transparent border-0  lg:p-0`
                   }
@@ -85,7 +85,7 @@ function header() {
                 <NavLink
                   to="/Gallery"
                   className={({ isActive }) =>
-                    `block pr-4 pl-3 duration-200 ${
+                    `block pr-4 pl-3 lg:duration-200 ${
                       isActive ? "textcolor underline" : "lightcolor"
                     }   hover:bg-transparent border-0  lg:p-0`
                   }
@@ -95,15 +95,15 @@ function header() {
               </li>
               <li>
                <Example DropUp={DisableBar} />
-              
 
-                
+
+
               </li>
               <li onClick={DisableBar}>
                 <NavLink
                   to="/About"
                   className={({ isActive }) =>
-                    `block pr-4 pl-3 duration-200 ${
+                    `block pr-4 pl-3 lg:duration-200 ${
                       isActive ? "textcolor underline" : "lightcolor"
                     }   hover:bg-transparent border-0  lg:p-0`
                   }
@@ -117,7 +117,7 @@ function header() {
                   <NavLink
                     to="/Profile"
                     className={({ isActive }) =>
-                      `block pr-4 pl-3 duration-200 ${
+                      `block pr-4 pl-3 lg:duration-200 ${
                         isActive ? "textcolor underline" : "lightcolor"
                       }   hover:bg-transparent border-0  lg:p-0`
                     }
@@ -128,7 +128,7 @@ function header() {
               ) : (
                 <li>
                   <button
-                    className="`block pr-4 pl-3 duration-200 lightcolor hover:bg-transparent border-0  lg:p-0"
+                    className="`block pr-4 pl-3 lg:duration-200 lightcolor hover:bg-transparent border-0  lg:p-0"
                     onClick={(e) => loginWithRedirect()}
                   >
                     LOGIN
@@ -139,7 +139,7 @@ function header() {
 
             <FontAwesomeIcon
               icon={faBars}
-              className="mt-[1.8rem] mx-4 h-10 text-[##004040] sm:hidden hover:cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
+              className="mt-[1.8rem] mx-4 h-10 text-[##004040] sm:hidden hover:cursor-pointer hover:scale-110 transition lg:duration-300 ease-in-out"
               onClick={EnableBar}
             />
           </div>
