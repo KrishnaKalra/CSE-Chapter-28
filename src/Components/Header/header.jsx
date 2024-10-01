@@ -12,7 +12,7 @@ function header() {
   const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
 
   console.log(user);
-  let newAccount = async () => {
+    let newAccount = async () => {
     let year = "20" + (Number(user.email.slice(2, 4)) + 4);
     console.log(year);
     let id = user.email.slice(0, 7).toUpperCase();
@@ -34,7 +34,7 @@ function header() {
       }
     }
   };
-  if (isAuthenticated) {
+  useEffect(()=>{if(isAuthenticated) {
     const email = user.email;
     //Branch Change IDs
     //27 Batch- "b323027","b523055","b423024","b223048","b523068"
@@ -47,7 +47,8 @@ function header() {
     } else {
       newAccount();
     }
-  }
+  
+  }},[isAuthenticated])
   let hamRef = useRef();
   const [hamburger, setHamburger] = useState("invisible");
   let EnableBar = () => {
