@@ -2,13 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 :root {
+  height: 100vh;
+  overflow-x: hidden;
+}
+.background{
   background-image: url('./assets/bgnlcomp.png');
   background-size:cover;
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center ;
   background-attachment: fixed;
-  overflow-x: hidden;
+  position:fixed;
+  z-index: -100;
+  width:100%;
 }
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
