@@ -82,7 +82,7 @@ function header() {
                   HOME
                 </NavLink>
               </li>
-              <li onClick={DisableBar}>
+              <li onClick={DisableBar} >
                 <NavLink
                   to="/Gallery"
                   className={({ isActive }) =>
@@ -94,11 +94,44 @@ function header() {
                   GALLERY
                 </NavLink>
               </li>
-              <li className={`${hamburger} sm:visible`}>
+              <li className={`${hamburger} sm:visible sm:block hidden `}>
                <Example DropUp={DisableBar} />
-
-
-
+              </li>
+              <li onClick={DisableBar} className="block sm:hidden">
+              <NavLink
+                  to="/Batches:2026"
+                  className={({ isActive }) =>
+                    `block pr-4 pl-3 lg:duration-200 ${
+                      isActive ? "textcolor underline" : "lightcolor"
+                    }   hover:bg-transparent border-0  lg:p-0`
+                  }
+                >
+                  BATCH 26
+                </NavLink>
+              </li>
+              <li onClick={DisableBar} className="sm:hidden">
+              <NavLink
+                  to="/Batches:2027"
+                  className={({ isActive }) =>
+                    `block pr-4 pl-3 lg:duration-200 ${
+                      isActive ? "textcolor underline" : "lightcolor"
+                    }   hover:bg-transparent border-0  lg:p-0`
+                  }
+                >
+                  BATCH 27
+                </NavLink>
+              </li>
+              <li onClick={DisableBar} className="sm:hidden">
+              <NavLink
+                  to="/Batches:2028"
+                  className={({ isActive }) =>
+                    `block pr-4 pl-3 lg:duration-200 ${
+                      isActive ? "textcolor underline" : "lightcolor"
+                    }   hover:bg-transparent border-0  lg:p-0`
+                  }
+                >
+                  BATCH 28
+                </NavLink>
               </li>
               <li onClick={DisableBar}>
                 <NavLink
