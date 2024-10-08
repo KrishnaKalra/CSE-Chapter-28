@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from 'react';
+import React, { useState } from 'react';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { NavLink } from 'react-router-dom'
 export default function Example({DropUp}) {
@@ -12,9 +12,8 @@ export default function Example({DropUp}) {
   };
   return (
     <Menu as="div"
-    onClick={()=>{
+    onClick={()=>{close();
       closeDropDown();
-      close();
     }}
     className={`relative ${dropdownactive? 'pb-48 transform duration-100 ease-out': 'pb-0 transform duration-75 ease-in'} inline-block   text-left`}
     >
