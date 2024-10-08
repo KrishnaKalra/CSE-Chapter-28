@@ -68,9 +68,14 @@ function header() {
           </div>
           <div className="header flex">
             <ul
-              className={`flex ${hamburger} bg-[#B2D7D0] bg-opacity-60 backdrop-blur-xl rounded-2xl w-[90vw] absolute left-[46%] p-10 translate-x-[-45%] top-[11%] text-center sm:visible sm:backdrop-blur-none font-bold sm:static z-20 flex-col sm:flex-row text-[2.25rem] sm:mt-6 sm:mr-14 lg:space-x-8 sm:justify-end sm:h-20 sm:w-[600px] sm:max-h-20 sm:bg-transparent sm:translate-x-0 sm:p-0 transform duration-100 ease-in-out`}
+              className={`flex ${hamburger} bg-[#B2D7D0] bg-opacity-60 backdrop-blur-sm pt-0  w-[100vw] absolute left-[46%] pb-10 translate-x-[-45%]  sm:visible sm:backdrop-blur-none font-bold sm:static z-20 flex-col sm:flex-row text-[2.25rem] sm:mt-6 sm:mr-14 lg:space-x-8 sm:justify-end sm:h-20 sm:w-[600px] sm:max-h-20 sm:bg-transparent sm:translate-x-0 sm:p-0 transform duration-100 ease-in-out`}
             >
-              <li onClick={DisableBar}>
+              <li className='sm:hidden'>
+                <div className='flex justify-between'>
+                <img className=" ml-5 mt-2 w-28 h-20" src={logo} />
+                </div>
+              </li>
+              <li onClick={DisableBar} className="px-10 sm:p-0">
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
@@ -82,7 +87,7 @@ function header() {
                   HOME
                 </NavLink>
               </li>
-              <li onClick={DisableBar} >
+              <li onClick={DisableBar} className="px-10 sm:p-0" >
                 <NavLink
                   to="/Gallery"
                   className={({ isActive }) =>
@@ -94,10 +99,10 @@ function header() {
                   GALLERY
                 </NavLink>
               </li>
-              <li className={`${hamburger} sm:visible sm:block hidden `}>
+              <li className={`${hamburger} sm:visible sm:block hidden px-10 sm:p-0`}>
                <Example DropUp={DisableBar} />
               </li>
-              <li onClick={DisableBar} className="block sm:hidden">
+              <li onClick={DisableBar} className="block sm:hidden px-10 sm:p-0">
               <NavLink
                   to="/Batches:2026"
                   className={({ isActive }) =>
@@ -109,7 +114,7 @@ function header() {
                   BATCH 26
                 </NavLink>
               </li>
-              <li onClick={DisableBar} className="sm:hidden">
+              <li onClick={DisableBar} className="sm:hidden px-10 sm:p-0">
               <NavLink
                   to="/Batches:2027"
                   className={({ isActive }) =>
@@ -121,7 +126,7 @@ function header() {
                   BATCH 27
                 </NavLink>
               </li>
-              <li onClick={DisableBar} className="sm:hidden">
+              <li onClick={DisableBar} className="sm:hidden px-10 sm:p-0">
               <NavLink
                   to="/Batches:2028"
                   className={({ isActive }) =>
@@ -133,7 +138,7 @@ function header() {
                   BATCH 28
                 </NavLink>
               </li>
-              <li onClick={DisableBar}>
+              <li onClick={DisableBar} className="px-10 sm:p-0">
                 <NavLink
                   to="/About"
                   className={({ isActive }) =>
@@ -147,7 +152,7 @@ function header() {
               </li>
 
               {isAuthenticated? (
-                <li onClick={DisableBar}>
+                <li onClick={DisableBar} className="px-10 sm:p-0">
                   <NavLink
                     to="/Profile"
                     className={({ isActive }) =>
@@ -160,7 +165,7 @@ function header() {
                   </NavLink>
                 </li>
               ) : (
-                <li>
+                <li className="px-10 sm:p-0">
                   <button
                     className="`block pr-4 pl-3 lg:duration-200 lightcolor hover:bg-transparent border-0  lg:p-0"
                     onClick={(e) => loginWithRedirect()}

@@ -83,7 +83,7 @@ We hope this platform serves as a helpful resource for staying connected, inform
         email="b323027@iiit-bh.ac.in"
         work=" Frontend "
       />
-      <AboutCard named="Vanessa G Reddy"
+      <AboutCard named="G Vanessa Reddy"
         pic={vanessa}
         Instagram="https://www.instagram.com/simplyy._vee/"
         GitHub=""
