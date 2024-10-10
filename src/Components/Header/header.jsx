@@ -64,7 +64,10 @@ function header() {
       <nav>
         <div className=" w-screen flex justify-between">
           <div>
+            <NavLink  to="/">
             <img className=" ml-5 mt-2 w-28 h-20" src={logo} />
+
+            </NavLink>
           </div>
           <div className="header flex">
             <ul
