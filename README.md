@@ -11,16 +11,7 @@
 better collaboration.
 </div>
 
-<div align="center">
-    <h3>P-Society Handles</h3>
-    <h3 align="center">
-        <a href="https://dev-psoc.netlify.app/">Website</a>
-        <span> | </span>
-        <a href="https://discord.gg/UhmKJGMnan">Community Discord</a>
-        <span> | </span>
-        <a href="https://github.com/p-society/gc-server/blob/main/docs/CONTRIBUTING.md">Contribute</a>
-    </h3>
-</div>
+
 
 ----------------------------------------
 
