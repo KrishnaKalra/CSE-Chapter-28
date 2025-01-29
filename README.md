@@ -1,5 +1,5 @@
 <h1 align="center">
-    CSE CHAPTER @*
+    CSE CHAPTER 28
 </h1>
 
 <h1 align="center">
