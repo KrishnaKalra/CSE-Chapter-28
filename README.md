@@ -7,7 +7,8 @@
 </h1>
 
 <div align="center">
-    Vulkan is a dynamic system designed to test multiple variants of a particular implementation in a competitive development environment.
+    CSE CHAPTER 28 is a centralized platform for the CSE branch where juniors can connect with their seniors, fostering
+better collaboration.
 </div>
 
 <div align="center">
