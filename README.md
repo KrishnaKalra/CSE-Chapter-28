@@ -29,7 +29,7 @@
 
 <div align="center">
     <br/>
-	<img src='https://skillicons.dev/icons?i=react,tailwind,node,git,mongodb' ></img>
+	<img src='https://skillicons.dev/icons?i=react,tailwind,nodejs,git,mongodb' ></img>
 </div>
 
 ## Installation Guide
