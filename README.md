@@ -3,7 +3,7 @@
 </h1>
 
 <h1 align="center">
-    <img src="https://res.cloudinary.com/dxxjhbo0i/image/upload/v1738180166/r0nbwbnnoi5bwtnjuxh1.svg" width="100">
+    <img src="https://res.cloudinary.com/dxxjhbo0i/image/upload/v1738180166/r0nbwbnnoi5bwtnjuxh1.svg" width="300">
 </h1>
 
 <div align="center">
