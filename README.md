@@ -3,7 +3,7 @@
 </h1>
 
 <h1 align="center">
-    <img src="https://github.com/user-attachments/assets/313d8a1c-53c9-41ac-a33d-5722a17992f6" width="350">
+    <img src="[https://github.com/user-attachments/assets/313d8a1c-53c9-41ac-a33d-5722a17992f6](https://cse-chapter-28.vercel.app/)" width="350">
 </h1>
 
 <div align="center">
