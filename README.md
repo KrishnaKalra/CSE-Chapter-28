@@ -3,7 +3,7 @@
 </h1>
 
 <h1 align="center">
-    <img src="[https://github.com/user-attachments/assets/313d8a1c-53c9-41ac-a33d-5722a17992f6](https://cse-chapter-28.vercel.app/)" width="350">
+    <img src="https://github.com/user-attachments/assets/313d8a1c-53c9-41ac-a33d-5722a17992f6](https://cse-chapter-28.vercel.app/" width="350">
 </h1>
 
 <div align="center">
@@ -29,7 +29,7 @@
 
 <div align="center">
     <br/>
-	<img src='https://skillicons.dev/icons?i=go,docker,git,mongodb' ></img>
+	<img src='https://skillicons.dev/icons?i=react,tailwind,node,git,mongodb' ></img>
 </div>
 
 ## Installation Guide
