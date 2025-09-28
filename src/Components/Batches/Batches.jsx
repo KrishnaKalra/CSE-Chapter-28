@@ -3,7 +3,11 @@ import ProfileCard from '../Profile Card/ProfileCard';
 import { useAuth0 } from "@auth0/auth0-react";
 function Batches({year}) {
   
-  const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
+   const { user, loginWithRedirect, isAuthenticated: auth0IsAuthenticated, logout } = useAuth0();
+
+  
+  const isDev = import.meta.env.DEV;  
+  const isAuthenticated = isDev ? true : auth0IsAuthenticated;
   console.log(year);
   return (
     <div>
