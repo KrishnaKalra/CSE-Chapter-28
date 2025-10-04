@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 // import csetasveer from '../../../assets/gallery/BatchPics';
+import csea28 from '../../../assets/gallery/BatchPics1/csea28.png';
+import cseb28 from '../../../assets/gallery/BatchPics1/cseb28.png';
 import csea27 from '../../../assets/gallery/BatchPics/csea27.jpg';
 import cseb27 from '../../../assets/gallery/BatchPics/cseb27.jpg';
 import tasveer1 from '../../../assets/gallery/BatchPics/tasveer1.jpg';
 import tasveer2 from '../../../assets/gallery/BatchPics/tasveer2.jpg';
+import csea2 from '../../../assets/gallery/BatchPics1/csea2.jpg';
+import cseb2 from '../../../assets/gallery/BatchPics1/cseb2.jpg';
+import cseFresher1 from '../../../assets/gallery/BatchPics1/csea-freshers.jpg';
 import "./slider.css";
 
  function Slider () {
@@ -12,9 +17,14 @@ import "./slider.css";
       
     let slides = [
       {
-        "src": tasveer2,
-        "alt": "Tasveer img cse2"
+        "src": csea28,
+        "alt": "CSE-A 2028"
       },
+      {
+        "src": cseb28,
+        "alt": "CSE-B 2028"
+      },
+      
       {
         "src": csea27,
         "alt": "CSE-A 2027"
@@ -22,6 +32,22 @@ import "./slider.css";
       {
         "src": cseb27,
         "alt": "CSE-B 2027"
+      },
+      {
+        "src": csea2,
+        "alt": "CSE-A 2"
+      },
+      {
+        "src": cseb2,
+        "alt": "CSE-B 2"
+      },
+      {
+        "src": cseFresher1,
+        "alt": "Fresher img csea"
+      },
+      {
+        "src": tasveer2,
+        "alt": "Tasveer img cse2"
       },
       {
         "src": tasveer1,

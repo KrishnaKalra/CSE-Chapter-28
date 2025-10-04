@@ -12,10 +12,11 @@
   position: relative;
 }
 
-.lightcolor::before {
+/* .lightcolor::before {
   content: "";
   position: absolute;
-  margin:0;
+  
+  margin-top:10px;
   width: 0;
   height: 2.6px;
   background-color: #002f26; 
@@ -27,7 +28,7 @@
 
 .lightcolor:hover::before {
   width: 100%;
-}
+} */
 
 @font-face {
     font-family: 'SofiaSEC';

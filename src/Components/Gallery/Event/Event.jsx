@@ -112,7 +112,7 @@ function Event() {
             return(
             <div  className='lg:p-3 pt-24 lg:pt-14' key={index}>
               <div onClick={()=>handleClick(item)} className='image-container rounded-2xl'>
-            <img className=' h-[60vh] w-[50vw] lg:h-[70vh] lg:w-[27vw] rounded-2xl hover:opacity-50 hover:backdrop-blur-lg  hover:backdrop-brightness-[30%]'
+            <img className=' h-[60vh] w-[50vw] lg:h-[70vh] lg:w-[27vw] rounded-2xl  hover:opacity-50 hover:backdrop-blur-lg  hover:backdrop-brightness-[30%]'
              src={item.src} title={item.title} />
              
              </div>
