@@ -2,8 +2,10 @@ import React from 'react'
 import ProfileCard from '../Profile Card/ProfileCard';
 import { useAuth0 } from "@auth0/auth0-react";
 function Batches({year}) {
-  
-   const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
+  const { user, loginWithRedirect, isAuthenticated: realAuth, logout } = useAuth0();
+
+  const isAuthenticated = import.meta.env.MODE === "development" ? true : realAuth;
+
 
   
   

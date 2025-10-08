@@ -129,8 +129,24 @@ function ProfileCard({year}) {
               onClick={() => popup(item)}
               className="pcard   h-[400px] w-[275px] backdrop-blur-md border-4 rounded-xl border-[#004040] border-opacity-20 hover:border-opacity-60 flex justify-around  items-center flex-col shadow-md hover:shadow-xl brightness-95 hover:brightness-100 text-[#2c3232aa] hover:text-[#004040] hover:scale-[1.05] transform transition duration-500 ease-in-out"
             >
-              <div className="mt-3 rounded-full h-[195px] w-[195px]">
-                <img className="h-[195px] w-[195px] object-cover rounded-full" src={item.image?(item.image):image} />
+              <div className="mt-3 rounded-full h-[195px] w-[195px] flex items-center justify-center bg-[#004040ba] text-white text-5xl font-bold">
+                {item.image ? (
+                  <img
+                    className="h-[195px] w-[195px] object-cover rounded-full"
+                    src={item.image}
+                    alt={item.name}
+                  />
+                ) : (
+                  
+                  <span>
+                    {item.name
+                      ?.split(" ")
+                      .map((word) => word[0])
+                      .join("")
+                      .toUpperCase()
+                      .slice(0, 2)}
+                  </span>
+                )}
               </div>
               <div className="flex items-center flex-col">
                 <p className=" text-3xl text-center">{item.name}</p>
