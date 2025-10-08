@@ -2,8 +2,12 @@
 import  "./home.css"
 
 import logo from "../../assets/logo/logocse.svg";
-import cseAimg from "../../assets/gallery/BatchPics1/cseA-3.jpg"
-import cseBimg from "../../assets/gallery/BatchPics1/cseB-1.jpg"
+// const cseAimg = "https://res.cloudinary.com/diwucid84/image/upload/v1759586450/cseA-1_or32xq.jpg"
+// const cseBimg = "https://res.cloudinary.com/diwucid84/image/upload/v1759586460/cseB-1_zydzsu.jpg"
+
+import cseAimg from "../../assets/gallery/BatchPics1/cseA-1.jpg";
+import cseBimg from "../../assets/gallery/BatchPics1/cseB-1.jpg";
+
 import { useEffect, useState } from "react";
 
 // import welcome from '../../assets/logo/Welcome.svg'
@@ -39,7 +43,7 @@ export default function Home() {
   return (
     <div>
       
-      <div className="mt-[5vh] lg:mt-5 flex justify-center items-center h-[30vh] lg:h-[30vh] w-[100vw]">
+      <div className="mt-[5vh] lg:mt-5 flex justify-center items-center h-[30vh] lg:h-[30vh] w-[100vw] fade-slide-up ">
         <img
           className="lg:mb-[5%] h-[15vh] lg:h-[20vh] w-[80vw]"
           src={logo}
@@ -48,7 +52,7 @@ export default function Home() {
       </div>
 
       
-      <div className="flex justify-center items-center h-[60vh] lg:h-[65vh] w-full px-4">
+      <div className="flex justify-center items-center h-[60vh] lg:h-[65vh] w-full px-4 fade-slide-up2">
         <div className="w-full max-w-[1300px] h-full rounded-3xl relative overflow-hidden">
           <div className="absolute bottom-0 w-full h-[50%] sm:h-[55%] md:h-[60%] rounded-tr-3xl rounded-tl-3xl bg-[#85916f]"></div>
 

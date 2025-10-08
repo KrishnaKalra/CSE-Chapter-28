@@ -8,15 +8,15 @@ import {
  faReact,faHtml5,faCss3Alt,faJs,faNode,faGithub
 } from "@fortawesome/free-brands-svg-icons";
 import { SiReact, SiJavascript, SiHtml5, SiCss3, SiGithub, SiTailwindcss, SiNodedotjs, SiVercel, SiMongodb  } from "react-icons/si";
-import krishna from "../../assets/about/krishna.png";
-import vanessa from "../../assets/about/vanessa.png";
-import priyanshu from "../../assets/about/priyanshu.png";
-import kohinoor from "../../assets/about/kohinoor.jpg";
-import partha from "../../assets/about/partha.jpg";
-import shivashish from "../../assets/about/shivashish.png";
-import manasmita from "../../assets/about/masnasmita.jpg";
-import dhairyawan from '../../assets/about/Dhairyawan.jpg';
-import aman from '../../assets/about/aman.jpeg';
+const krishna = "https://res.cloudinary.com/diwucid84/image/upload/v1759586822/krishna_sjw1ko.jpg";
+const vanessa = "https://res.cloudinary.com/diwucid84/image/upload/v1759586848/vanessa_kblz0b.jpg";
+const priyanshu = "https://res.cloudinary.com/diwucid84/image/upload/v1759586844/priyanshu_wlquim.jpg";
+const kohinoor = "https://res.cloudinary.com/diwucid84/image/upload/v1759586821/kohinoor_q36qtw.jpg";
+const partha = "https://res.cloudinary.com/diwucid84/image/upload/v1759586843/partha_r6lecj.jpg";
+const shivashish = "https://res.cloudinary.com/diwucid84/image/upload/v1759586845/shivashish_lnm25y.jpg";
+const manasmita = "https://res.cloudinary.com/diwucid84/image/upload/v1759586822/masnasmita_njj2ut.jpg";
+const dhairyawan = 'https://res.cloudinary.com/diwucid84/image/upload/v1759586820/Dhairyawan_tiyiyh.jpg';
+const aman = 'https://res.cloudinary.com/diwucid84/image/upload/v1759586819/aman_nbcjz5.jpg';
 
 function about() {
   return (

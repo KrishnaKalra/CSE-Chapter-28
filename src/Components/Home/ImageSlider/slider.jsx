@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 // import csetasveer from '../../../assets/gallery/BatchPics';
-import csea28 from '../../../assets/gallery/BatchPics1/csea28.png';
-import cseb28 from '../../../assets/gallery/BatchPics1/cseb28.png';
-import csea27 from '../../../assets/gallery/BatchPics/csea27.jpg';
-import cseb27 from '../../../assets/gallery/BatchPics/cseb27.jpg';
-import tasveer1 from '../../../assets/gallery/BatchPics/tasveer1.jpg';
-import tasveer2 from '../../../assets/gallery/BatchPics/tasveer2.jpg';
-import csea2 from '../../../assets/gallery/BatchPics1/csea2.jpg';
-import cseb2 from '../../../assets/gallery/BatchPics1/cseb2.jpg';
-import cseFresher1 from '../../../assets/gallery/BatchPics1/csea-freshers.jpg';
+const csea28 = "https://res.cloudinary.com/diwucid84/image/upload/v1759586133/csea28_gkluvy.png";
+const cseb28 = "https://res.cloudinary.com/diwucid84/image/upload/v1759586135/cseb28_huzchj.png";
+const csea27 = "https://res.cloudinary.com/diwucid84/image/upload/v1759586157/csea27_iibdps.jpg";
+const cseb27 = "https://res.cloudinary.com/diwucid84/image/upload/v1759586157/cseb27_m1llgb.jpg";
+const tasveer1 = "https://res.cloudinary.com/diwucid84/image/upload/v1759586157/tasveer1_oidsbo.jpg";
+const tasveer2 = "https://res.cloudinary.com/diwucid84/image/upload/v1759586159/tasveer2_nzcoot.jpg";
+const csea2 = "https://res.cloudinary.com/diwucid84/image/upload/v1759586143/csea2_d2pxy9.jpg";
+const cseb2 = "https://res.cloudinary.com/diwucid84/image/upload/v1759586134/cseb2_y4qm5e.jpg";
+const cseFresher1 = "https://res.cloudinary.com/diwucid84/image/upload/v1759586137/csea-freshers_hwksjl.jpg";
 import "./slider.css";
 
  function Slider () {

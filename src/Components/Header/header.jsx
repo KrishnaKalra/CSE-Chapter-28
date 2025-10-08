@@ -22,7 +22,7 @@ function header() {
     if (check.data.length == 0) {
       try {
         await axios.post(
-          "http://localhost:3000/api/" +
+          "https://cse-chapter-28-server.vercel.app/api/" +
             year +
             "/add?name=" +
             user.name +
@@ -40,7 +40,7 @@ function header() {
     //27 Batch- "b323027","b523055","b423024","b223048","b523068"
     //26 Batch- "b222032","b322006","b322020","b322037","b422001","b522034","b222010","b322029","b322035","b422019"
     //25 Batch- "b221021","b221029","b321031","b421037","b421054","b521002"
-    const BranchChange=["b323027","b523055","b423024","b223048","b523068","b222032","b322006","b322020","b322037","b422001","b522034","b222010","b322029","b322035","b422019"]
+    const BranchChange=["b323027","b523055","b423024","b223048","b523068","b222032","b322006","b322020","b322037","b422001","b522034","b222010","b322029","b322035","b422019","b224039","b224017","b324020","b424029","b524008"]
     if (email.slice(0, 2) != "b1"&&!BranchChange.includes(email.slice(0,7)) ) {
       alert("Email Invailid");
       logout();
