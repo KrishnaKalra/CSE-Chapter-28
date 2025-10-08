@@ -82,7 +82,7 @@ function Login({refresh}) {
     id=id.toUpperCase();
      //id="B123067"
     year="20"+((Number)(id.slice(2,4))+4);
-    const result=await axios.get(`https://cse-chapter-28-server.vercel.appam/api/${year}/id?id=${id}`);
+    const result=await axios.get(`https://cse-chapter-28-server.vercel.app/api/${year}/id?id=${id}`);
     const dt=result.data;
     setData(dt);
     console.log(result.data);
