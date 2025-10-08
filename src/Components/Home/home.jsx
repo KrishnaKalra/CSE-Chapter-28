@@ -2,11 +2,10 @@
 import  "./home.css"
 
 import logo from "../../assets/logo/logocse.svg";
-// const cseAimg = "https://res.cloudinary.com/diwucid84/image/upload/v1759586450/cseA-1_or32xq.jpg"
-// const cseBimg = "https://res.cloudinary.com/diwucid84/image/upload/v1759586460/cseB-1_zydzsu.jpg"
+const cseAimg = "https://res.cloudinary.com/diwucid84/image/upload/v1759586450/cseA-1_or32xq.jpg"
+const cseBimg = "https://res.cloudinary.com/diwucid84/image/upload/v1759586460/cseB-1_zydzsu.jpg"
 
-import cseAimg from "../../assets/gallery/BatchPics1/cseA-1.jpg";
-import cseBimg from "../../assets/gallery/BatchPics1/cseB-1.jpg";
+
 
 import { useEffect, useState } from "react";
 

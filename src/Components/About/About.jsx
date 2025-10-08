@@ -34,8 +34,19 @@ We hope this platform serves as a helpful resource for staying connected, inform
 </h1>
     </div>
 <div className=' flex flex-col justify-center items-center mb-[90px]'>
-  
-  <h1 className='text-5xl lg:text-7xl  mb-6 mr-[10%] ml-[10%] font-semibold text-[#004040] sofia'>CHAPTER '28 TEAM</h1>
+  <h1 className='text-5xl  lg:text-7xl mb-6 mr-[10%] ml-[10%] font-semibold text-[#004040] sofia'>CHAPTER '29 TEAM</h1>
+    <div className="cards flex-wrap flex flex-row justify-center gap-10 max-w-[80vw]">
+      <AboutCard named="Aman Raj" 
+        pic={aman}
+        Instagram="https://www.instagram.com/krishna_kalra_7/"
+        GitHub="https://github.com/KrishnaKalra/"
+        LinkedIn="https://www.linkedin.com/in/krishna-kalra-88aa72286/"
+         email="b124011@iiit-bh.ac.in"
+        work=" Frontend || UI/UX "
+      />
+      
+    </div>
+  <h1 className='text-5xl lg:text-7xl mt-20  mb-6 mr-[10%] ml-[10%] font-semibold text-[#004040] sofia'>CHAPTER '28 TEAM</h1>
     <div className="cards flex-wrap flex flex-row justify-center gap-10 max-w-[80vw]">
       <AboutCard named="Krishna Kalra" 
         pic={krishna}
@@ -102,18 +113,7 @@ We hope this platform serves as a helpful resource for staying connected, inform
         email="b123072@iiit-bh.ac.in"
       />
     </div>
-    <h1 className='text-5xl mt-20 lg:text-7xl mb-6 mr-[10%] ml-[10%] font-semibold text-[#004040] sofia'>CHAPTER '29 TEAM</h1>
-    <div className="cards flex-wrap flex flex-row justify-center gap-10 max-w-[80vw]">
-      <AboutCard named="Aman Raj" 
-        pic={aman}
-        Instagram="https://www.instagram.com/krishna_kalra_7/"
-        GitHub="https://github.com/KrishnaKalra/"
-        LinkedIn="https://www.linkedin.com/in/krishna-kalra-88aa72286/"
-         email="b124011@iiit-bh.ac.in"
-        work=" Frontend || UI/UX "
-      />
-      
-    </div>
+    
 </div>
 <h1 className='text-4xl lg:text-5xl mb-10 mr-[10%] ml-[10%] text-[#2c3232aa] sofia'>Tech Stack Used</h1>
 <div className='mr-[10%] ml-[10%] mb-10 flex flex-row justify-between align-middle text-lg gap-[1em] lg:text-4xl flex-nowrap lg:gap-[1.5em] text-[#2c3232aa]'>
