@@ -17,7 +17,7 @@ function header() {
     console.log(year);
     let id = user.email.slice(0, 7).toUpperCase();
     const check = await axios.get(
-      "https://cse-chapter-28-server.vercel.app/api/" + year + "/id?id=" + id
+      "http://localhost:300/api/" + year + "/id?id=" + id
     );
     if (check.data.length == 0) {
       try {
@@ -40,7 +40,7 @@ function header() {
     //27 Batch- "b323027","b523055","b423024","b223048","b523068"
     //26 Batch- "b222032","b322006","b322020","b322037","b422001","b522034","b222010","b322029","b322035","b422019"
     //25 Batch- "b221021","b221029","b321031","b421037","b421054","b521002"
-    const BranchChange=["b323027","b523055","b423024","b223048","b523068","b222032","b322006","b322020","b322037","b422001","b522034","b222010","b322029","b322035","b422019"]
+    const BranchChange=["b323027","b523055","b423024","b223048","b523068","b222032","b322006","b322020","b322037","b422001","b522034","b222010","b322029","b322035","b422019","b224039","b224017","b324020","b424029","b524008"]
     if (email.slice(0, 2) != "b1"&&!BranchChange.includes(email.slice(0,7)) ) {
       alert("Email Invailid");
       logout();
@@ -59,131 +59,223 @@ function header() {
     console.log(hamburger);
     if (hamburger == "visible") setHamburger("invisible");
   };
-  return (
-    <div >
-      <nav>
-        <div className=" w-screen flex justify-between">
-          <div>
-            <NavLink  to="/">
-            <img className=" ml-5 mt-2 w-28 h-20" src={logo} />
-
-            </NavLink>
-          </div>
-          <div className="header flex">
-            <ul
-              className={`flex ${hamburger} bg-[#B2D7D0] bg-opacity-60 backdrop-blur-xl rounded-2xl w-[90vw] absolute left-[46%] p-10 translate-x-[-45%] top-[11%] text-center sm:visible sm:backdrop-blur-none font-bold sm:static z-20 flex-col sm:flex-row text-[2.25rem] sm:mt-6 sm:mr-14 lg:space-x-8 sm:justify-end sm:h-20 sm:w-[600px] sm:max-h-20 sm:bg-transparent sm:translate-x-0 sm:p-0 transform duration-100 ease-in-out`}
-            >
-              <li onClick={DisableBar}>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    `block pr-4 pl-3 lg:duration-200 ${
-                      isActive ? "textcolor underline" : "lightcolor"
-                    }    hover:bg-transparent border-0  lg:p-0`
-                  }
-                >
-                  HOME
-                </NavLink>
-              </li>
-              <li onClick={DisableBar} >
-                <NavLink
-                  to="/Gallery"
-                  className={({ isActive }) =>
-                    `block pr-4 pl-3 lg:duration-200 ${
-                      isActive ? "textcolor underline" : "lightcolor"
-                    }   hover:bg-transparent border-0  lg:p-0`
-                  }
-                >
-                  GALLERY
-                </NavLink>
-              </li>
-              <li className={`${hamburger} sm:visible sm:block hidden `}>
-               <Example DropUp={DisableBar} />
-              </li>
-              <li onClick={DisableBar} className="block sm:hidden">
-              <NavLink
-                  to="/Batches:2026"
-                  className={({ isActive }) =>
-                    `block pr-4 pl-3 lg:duration-200 ${
-                      isActive ? "textcolor underline" : "lightcolor"
-                    }   hover:bg-transparent border-0  lg:p-0`
-                  }
-                >
-                  BATCH 26
-                </NavLink>
-              </li>
-              <li onClick={DisableBar} className="sm:hidden">
-              <NavLink
-                  to="/Batches:2027"
-                  className={({ isActive }) =>
-                    `block pr-4 pl-3 lg:duration-200 ${
-                      isActive ? "textcolor underline" : "lightcolor"
-                    }   hover:bg-transparent border-0  lg:p-0`
-                  }
-                >
-                  BATCH 27
-                </NavLink>
-              </li>
-              <li onClick={DisableBar} className="sm:hidden">
-              <NavLink
-                  to="/Batches:2028"
-                  className={({ isActive }) =>
-                    `block pr-4 pl-3 lg:duration-200 ${
-                      isActive ? "textcolor underline" : "lightcolor"
-                    }   hover:bg-transparent border-0  lg:p-0`
-                  }
-                >
-                  BATCH 28
-                </NavLink>
-              </li>
-              <li onClick={DisableBar}>
-                <NavLink
-                  to="/About"
-                  className={({ isActive }) =>
-                    `block pr-4 pl-3 lg:duration-200 ${
-                      isActive ? "textcolor underline" : "lightcolor"
-                    }   hover:bg-transparent border-0  lg:p-0`
-                  }
-                >
-                  ABOUT
-                </NavLink>
-              </li>
-
-              {isAuthenticated? (
-                <li onClick={DisableBar}>
-                  <NavLink
-                    to="/Profile"
-                    className={({ isActive }) =>
-                      `block pr-4 pl-3 lg:duration-200 ${
-                        isActive ? "textcolor underline" : "lightcolor"
-                      }   hover:bg-transparent border-0  lg:p-0`
-                    }
-                  >
-                    PROFILE
-                  </NavLink>
-                </li>
-              ) : (
-                <li>
-                  <button
-                    className="`block pr-4 pl-3 lg:duration-200 lightcolor hover:bg-transparent border-0  lg:p-0"
-                    onClick={(e) => loginWithRedirect()}
-                  >
-                    LOGIN
-                  </button>
-                </li>
-              )}
-            </ul>
-
-            <FontAwesomeIcon
-              icon={faBars}
-              className="mt-[1.8rem] mx-4 h-10 text-[##004040] sm:hidden hover:cursor-pointer hover:scale-110 transition lg:duration-300 ease-in-out"
-              onClick={EnableBar}
-            />
-          </div>
+return (
+  <div className="sticky top-0 z-50">
+    <nav >
+      <div className="w-screen flex justify-between items-center px-6 py-4">
+        
+        <div>
+          <NavLink to="/">
+            <img className="w-28 h-20 object-contain" src={logo} alt="Logo" />
+          </NavLink>
         </div>
-      </nav>
-    </div>
-  );
+        
+        
+        <div className="hidden sm:flex items-center justify-center rounded-full p-5 bg-[#f5f5dc6e] backdrop-blur-sm">
+          <ul className="flex items-center space-x-8 font-semibold text-gray-800">
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `px-3 py-2 transition-colors duration-200 ${
+                    isActive 
+                      ? "text-black font-bold underline underline-offset-4" 
+                      : "text-gray-600 hover:text-black"
+                  }`
+                }
+              >
+                HOME
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/Gallery"
+                className={({ isActive }) =>
+                  `px-3 py-2 transition-colors duration-200 ${
+                    isActive 
+                      ? "text-black font-bold underline underline-offset-4" 
+                      : "text-gray-600 hover:text-black"
+                  }`
+                }
+              >
+                GALLERY
+              </NavLink>
+            </li>
+            <li>
+              <Example DropUp={DisableBar} />
+            </li>
+            <li>
+              <NavLink
+                to="/About"
+                className={({ isActive }) =>
+                  `px-3 py-2 transition-colors duration-200 ${
+                    isActive 
+                      ? "text-black font-bold underline underline-offset-4" 
+                      : "text-gray-600 hover:text-black"
+                  }`
+                }
+              >
+                ABOUT
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+
+        {/* Right Side - Login/Profile Button & Mobile Menu */}
+        <div className="flex items-center">
+          {/* Login/Profile Button - Desktop */}
+          <div className="hidden sm:block">
+            {isAuthenticated ? (
+              <NavLink
+                to="/Profile"
+                className="bg-[#6B8E23] hover:bg-[#556B1F] text-white font-semibold px-6 py-2.5 rounded-full transition-colors duration-200"
+              >
+                PROFILE
+              </NavLink>
+            ) : (
+              <button
+                className="bg-[#6B8E23] hover:bg-[#556B1F] text-white font-semibold px-6 py-2.5 rounded-full transition-colors duration-200"
+                onClick={(e) => loginWithRedirect()}
+              >
+                LOGIN
+              </button>
+            )}
+          </div>
+
+          {/* Mobile Menu Toggle */}
+          <FontAwesomeIcon
+            icon={faBars}
+            className="text-gray-800 h-8 ml-4 sm:hidden hover:cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
+            onClick={EnableBar}
+          />
+        </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      <ul
+        className={`sm:hidden ${hamburger} bg-white shadow-lg absolute left-0 right-0 top-[100px] mx-4 rounded-2xl p-8 z-50 flex flex-col space-y-6 text-center font-semibold text-xl transform transition-all duration-300 ease-in-out`}
+      >
+        <li onClick={DisableBar}>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `block py-2 ${
+                isActive 
+                  ? "text-black font-bold underline underline-offset-4" 
+                  : "text-gray-600"
+              }`
+            }
+          >
+            HOME
+          </NavLink>
+        </li>
+        <li onClick={DisableBar}>
+          <NavLink
+            to="/Gallery"
+            className={({ isActive }) =>
+              `block py-2 ${
+                isActive 
+                  ? "text-black font-bold underline underline-offset-4" 
+                  : "text-gray-600"
+              }`
+            }
+          >
+            GALLERY
+          </NavLink>
+        </li>
+        <li onClick={DisableBar}>
+          <NavLink
+            to="/Batches:2026"
+            className={({ isActive }) =>
+              `block py-2 ${
+                isActive 
+                  ? "text-black font-bold underline underline-offset-4" 
+                  : "text-gray-600"
+              }`
+            }
+          >
+            BATCH 26
+          </NavLink>
+        </li>
+        <li onClick={DisableBar}>
+          <NavLink
+            to="/Batches:2027"
+            className={({ isActive }) =>
+              `block py-2 ${
+                isActive 
+                  ? "text-black font-bold underline underline-offset-4" 
+                  : "text-gray-600"
+              }`
+            }
+          >
+            BATCH 27
+          </NavLink>
+        </li>
+        <li onClick={DisableBar}>
+          <NavLink
+            to="/Batches:2028"
+            className={({ isActive }) =>
+              `block py-2 ${
+                isActive 
+                  ? "text-black font-bold underline underline-offset-4" 
+                  : "text-gray-600"
+              }`
+            }
+          >
+            BATCH 28
+          </NavLink>
+        </li>
+        <li onClick={DisableBar}>
+          <NavLink
+            to="/Batches:2029"
+            className={({ isActive }) =>
+              `block py-2 ${
+                isActive 
+                  ? "text-black font-bold underline underline-offset-4" 
+                  : "text-gray-600"
+              }`
+            }
+          >
+            BATCH 29
+          </NavLink>
+        </li>
+        <li onClick={DisableBar}>
+          <NavLink
+            to="/About"
+            className={({ isActive }) =>
+              `block py-2 ${
+                isActive 
+                  ? "text-black font-bold underline underline-offset-4" 
+                  : "text-gray-600"
+              }`
+            }
+          >
+            ABOUT
+          </NavLink>
+        </li>
+        {isAuthenticated ? (
+          <li onClick={DisableBar}>
+            <NavLink
+              to="/Profile"
+              className="block bg-[#6B8E23] hover:bg-[#556B1F] text-white font-semibold px-6 py-3 rounded-full mx-auto w-fit transition-colors duration-200"
+            >
+              PROFILE
+            </NavLink>
+          </li>
+        ) : (
+          <li>
+            <button
+              className="bg-[#6B8E23] hover:bg-[#556B1F] text-white font-semibold px-6 py-3 rounded-full mx-auto transition-colors duration-200"
+              onClick={(e) => loginWithRedirect()}
+            >
+              LOGIN
+            </button>
+          </li>
+        )}
+      </ul>
+    </nav>
+  </div>
+);
 }
 
 export default header;

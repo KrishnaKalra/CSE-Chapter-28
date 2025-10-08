@@ -10,7 +10,7 @@
   overflow-x: hidden;
 }
 .background{
-  background-image: url('./assets/bgnlcomp.png');
+  background-image: url("./assets/bgnlcrop2.svg");
   background-size:cover;
   height: 120%;
   width:100%;
@@ -45,4 +45,44 @@
   
   background-clip:content-box;
   height:5px;
+}
+.fade-slide-up{
+  opacity: 0;
+  transform: translateY(40vh);
+  
+  animation: slideUpFadeIn 0.8s ease-in-out forwards;
+
+
+}
+.fade-slide-up2{
+  opacity: 0;
+  transform: translateY(50vh);
+  
+  animation: slideUpFadeIn 1s ease-in-out forwards;
+
+
+}
+@keyframes slideUpFadeIn {
+  0%{
+    opacity: 0;
+    transform: translateY(40vh);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
+@keyframes slideUpFadeIn2 {
+  0%{
+    opacity: 0;
+    transform: translateY(50vh);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+
+  }
 }

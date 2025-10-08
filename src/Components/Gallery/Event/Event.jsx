@@ -9,8 +9,8 @@ import { RevealBentoR } from '../../GalleryCard/Grid/GridRight';
 import { useNavigate } from 'react-router-dom';
 import advaita from "../../../assets/gallery/headingpics/advaita.png"
 import marathon from "../../../assets/gallery/smallpics/advaitamarathon.png"
-import lamode from "../../../assets/gallery/smallpics/lamode.png"
-import robo from "../../../assets/gallery/smallpics/robo.png"
+const lamode = "https://res.cloudinary.com/diwucid84/image/upload/v1759593413/IMG_6911_l4yyj7.jpg"
+const paint = "https://res.cloudinary.com/diwucid84/image/upload/v1759593736/paintwear_rteqsg.jpg"
 import valo from "../../../assets/gallery/smallpics/valo.png"
 import crowd from "../../../assets/gallery/smallpics/crowd.png"
 import inside from "../../../assets/gallery/smallpics/inside.png"
@@ -30,12 +30,12 @@ const data = [
   {
     "src": advaita,
     "title": "ADVAITA",
-    "para": "Advaita is the annual techno-cultural fest of IIIT Bhubaneswar, blending technology, culture, and innovation. It features a wide array of events, from coding competitions and robotics challenges to music, dance, and art, fostering a spirit of creativity and competition. ",
+    "para": "Advaita is the annual techno-cultural fest of IIIT Bhubaneswar, blending technology, culture, and innovation. It features a wide array of events, from coding competitions and painttics challenges to music, dance, and art, fostering a spirit of creativity and competition. ",
      "smalpics":{
       "pic1":crowd,
         "pic2":marathon,
         "pic3":lamode, 
-        "pic4":robo, 
+        "pic4":paint, 
         "pic5":valo,         
 
     }
@@ -112,7 +112,7 @@ function Event() {
             return(
             <div  className='lg:p-3 pt-24 lg:pt-14' key={index}>
               <div onClick={()=>handleClick(item)} className='image-container rounded-2xl'>
-            <img className=' h-[60vh] w-[50vw] lg:h-[70vh] lg:w-[27vw] rounded-2xl hover:opacity-50 hover:backdrop-blur-lg  hover:backdrop-brightness-[30%]'
+            <img className=' h-[60vh] w-[50vw] lg:h-[70vh] lg:w-[27vw] rounded-2xl  hover:opacity-50 hover:backdrop-blur-lg  hover:backdrop-brightness-[30%]'
              src={item.src} title={item.title} />
              
              </div>

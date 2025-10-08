@@ -29,7 +29,7 @@ export default function Example({DropUp}) {
           DropUp();
         }}
         transition
-        className="absolute right-0 z-10 mt-3 w-[8rem] origin-top-right backdrop-blur-lg rounded-md bg-[#d1fffa] bg-opacity-80 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+        className="absolute right-0 z-10 mt-3 w-[7rem] origin-top-right backdrop-blur-lg rounded-md bg-[#eaece78b]  bg-opacity-80 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
       >
         
         <div className="py-1">
@@ -47,7 +47,7 @@ export default function Example({DropUp}) {
                   }}
                   to="/Batches:2026"
                   className={
-                    `block px-4 py-2 text-3xl text-center backdrop-blur-lg text-[#0e4a3f] data-[focus]:bg-[#d1fffa80] data-[focus]:text-[#081513]  lg:duration-200  hover:bg-transparent border-0  lg:p-0`
+                    `block px-2 py-2 text-2xl text-center backdrop-blur-lg text-[#2c3634] data-[focus]:bg-[#d1fffa80] data-[focus]:text-[#081513]  lg:duration-200  hover:bg-transparent border-0  lg:p-0`
                   }
                 >2026</NavLink>
               )}
@@ -62,8 +62,8 @@ export default function Example({DropUp}) {
                   }}
                   to="/Batches:2027"
                   className={
-                    `block px-4 py-2 text-3xl text-center backdrop-blur-lg text-[#0e4a3f] data-[focus]:bg-[#d1fffa80] data-[focus]:text-[#081513]  lg:duration-200  hover:bg-transparent border-0  lg:p-0`
-                  }
+                    `block px-2 py-2 text-2xl text-center backdrop-blur-lg text-[#2c3634] data-[focus]:bg-[#d1fffa80] data-[focus]:text-[#081513]  lg:duration-200  hover:bg-transparent border-0  lg:p-0`            
+                   }
                 >2027</NavLink>
               )}
           </MenuItem>
@@ -77,9 +77,24 @@ export default function Example({DropUp}) {
                   }}
                   to="/Batches:2028"
                   className={
-                    `block px-4 text-center py-2 text-3xl backdrop-blur-lg text-[#0e4a3f] data-[focus]:bg-[#d1fffa80] data-[focus]:text-[#081513]  lg:duration-200  hover:bg-transparent border-0  lg:p-0`
+                    `block px-2 py-2 text-2xl text-center backdrop-blur-lg text-[#2c3634] data-[focus]:bg-[#d1fffa80] data-[focus]:text-[#081513]  lg:duration-200  hover:bg-transparent border-0  lg:p-0`                  
                   }
                 >2028</NavLink>
+              )}
+          </MenuItem>
+          <MenuItem >
+            
+              {({ close }) => (
+              <NavLink
+                  onClick={()=>{close();
+                    closeDropDown();
+                    DropUp();
+                  }}
+                  to="/Batches:2029"
+                  className={
+                    `block px-2 py-2 text-2xl text-center backdrop-blur-lg text-[#2c3634] data-[focus]:bg-[#d1fffa80] data-[focus]:text-[#081513]  lg:duration-200  hover:bg-transparent border-0  lg:p-0`                  
+                  }
+                >2029</NavLink>
               )}
           </MenuItem>
         </div>

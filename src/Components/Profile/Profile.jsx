@@ -82,7 +82,7 @@ function Login({refresh}) {
     id=id.toUpperCase();
      //id="B123067"
     year="20"+((Number)(id.slice(2,4))+4);
-    const result=await axios.get(`https://cse-chapter-28-server.vercel.app/api/${year}/id?id=${id}`);
+    const result=await axios.get(`https://cse-chapter-28-server.vercel.appam/api/${year}/id?id=${id}`);
     const dt=result.data;
     setData(dt);
     console.log(result.data);
@@ -169,16 +169,16 @@ function Login({refresh}) {
                 </div>
               </div>
 
-              <div className='w-[90%] lg:mx-auto md:ml-20 bg-white bg-opacity-0 p-2 mt-6 rounded-lg font-extrabold text-center text-white text-3xl uppercase'>
+              <div className='w-[90%] lg:mx-auto md:ml-20 bg-white bg-opacity-0 p-2 mt-6 rounded-lg font-extrabold text-center text-[#004040] text-3xl uppercase'>
                 {data[0].name}
               </div>
 
               <input className='w-[100%] bg-white bg-opacity-0 p-2 rounded-lg font-extrabold text-center text-white' readOnly hidden type='text' name='id' placeholder="Id" value={data[0].id}></input>
 
               <div className=' w-[90%] flex justify-center '>
-              <FontAwesomeIcon icon={faMapMarkerAlt} className='inline mx-4 ml-1 my-2 size-9 text-[#b2d7d0]' />
+              <FontAwesomeIcon icon={faMapMarkerAlt} className='inline mx-4 ml-1 my-2 size-9 text-[#004040]' />
                 <input
-                  className='w-[75%] lg:w-[90%] mr-10 bg-white bg-opacity-20 backdrop-blur-sm p-2 pl-3 text-[#eafdf9] rounded-lg max-w-[86%] outline-none placeholder-[#fffa] outline-offset-0 focus:outline-[#d2fff7a0]'
+                  className='w-[75%] lg:w-[90%] mr-10 bg-[#004040] bg-opacity-20 backdrop-blur-sm p-2 pl-3 text-[#00404098] rounded-lg max-w-[86%] outline-none placeholder-[#6a8e2360] outline-offset-0 focus:outline-[#004040a0]'
                   type='text' name='location' value={Location} placeholder='Location'
                   onChange={(event)=>SetLocation(event.target.value)}>
                 </input>
@@ -188,9 +188,9 @@ function Login({refresh}) {
             <div className=' sm:w-[50%] w-[80%] h-[70%]'>
 
               <br />
-              <h1 className=' font-extrabold mt-4 text-4xl text-center text-[#e0fcf6]'>About me</h1>
+              <h1 className=' font-extrabold mt-4 text-4xl text-center text-[#004040]'>About me</h1>
               <textarea
-                className=' w-[100%] bg-white h-[30%] bg-opacity-20 xl:max-w-3xl backdrop-blur-sm pt-3 mt-6 rounded-lg max-w-2xl text-[#fff] placeholder-[#fffa] outline-offset-0 outline-[#d2fff7] resize-none p-4' rows='4'
+                className=' w-[100%] bg-[#004040] h-[30%] bg-opacity-20 xl:max-w-3xl backdrop-blur-sm pt-3 mt-6 rounded-lg max-w-2xl text-[#00404098] placeholder-[#6a8e2360] outline-offset-0 outline-[#004040] resize-none p-4' rows='4'
                 name='description' value={Description} placeholder='Description'
                 onChange={(event)=>setDescription(event.target.value)}>
               </textarea>
@@ -198,25 +198,25 @@ function Login({refresh}) {
               <br />
 
               <div className='w-[100%] flex mt-5'>
-              <FontAwesomeIcon className='inline mx-4 ml-1 my-1 size-10 text-[#b2d7d0]' icon={faInstagram} />
+              <FontAwesomeIcon className='inline mx-4 ml-1 my-1 size-10 text-[#004040]' icon={faInstagram} />
                 <input
-                  className='w-[91.5%]  bg-white bg-opacity-20 backdrop-blur-sm p-2 pl-3  rounded-lg text-[#eafdf9] outline-none placeholder-[#fffa] outline-offset-0 focus:outline-[#d2fff7a0]'
+                  className='w-[91.5%]  bg-[#004040] bg-opacity-20 backdrop-blur-sm p-2 pl-3  rounded-lg text-[#00404098] outline-none placeholder-[#6a8e2360] outline-offset-0 focus:outline-[#004040a0]'
                   type='text' name='instagram' value={insta} placeholder='Instagram'
                   onChange={(event)=>SetInsta(event.target.value)}></input>
               </div>
 
               <div className='w-[100%] flex mt-5'>
-              <FontAwesomeIcon className='inline mx-4 ml-1 my-1 size-10 text-[#b2d7d0]' icon={faLinkedin} />
+              <FontAwesomeIcon className='inline mx-4 ml-1 my-1 size-10 text-[#004040]' icon={faLinkedin} />
                 <input
-                  className='w-[91.5%] bg-white bg-opacity-20 backdrop-blur-sm p-2 pl-3 text-[#eafdf9] rounded-lg outline-none placeholder-[#fffa] outline-offset-0 focus:outline-[#d2fff7a0]'
+                  className='w-[91.5%] bg-[#004040] bg-opacity-20 backdrop-blur-sm p-2 pl-3 text-[#00404098] rounded-lg outline-none placeholder-[#6a8e2360] outline-offset-0 focus:outline-[#004040a0]'
                   type='text' name='linkedin' value={LinkedIn} placeholder='LinkedIn'
                   onChange={(event)=>SetLinkedIn(event.target.value)}></input>
               </div>
 
               <div className='w-[100%] flex mt-5'>
-              <FontAwesomeIcon className='inline mx-4 ml-1 my-1 size-10 text-[#b2d7d0]' icon={faGithub} />
+              <FontAwesomeIcon className='inline mx-4 ml-1 my-1 size-10 text-[#004040]' icon={faGithub} />
                 <input
-                  className='w-[91.5%] bg-white bg-opacity-20 backdrop-blur-sm p-2 pl-3 text-[#eafdf9] rounded-lg outline-none placeholder-[#fffa] outline-offset-0 focus:outline-[#d2fff7a0]'
+                  className='w-[91.5%] bg-[#004040] bg-opacity-20 backdrop-blur-sm p-2 pl-3 text-[#00404098] rounded-lg outline-none placeholder-[#6a8e2360] outline-offset-0 focus:outline-[#004040a0]'
                   type='text' name='github' value={GitHub} placeholder='GitHub'
                   onChange={(event)=>SetGitHub(event.target.value)}></input>
               </div>
@@ -231,16 +231,16 @@ function Login({refresh}) {
           <div >
             <button
               className='
-              hover:border-black border-[1px]
+              hover:scale-2 
               md:ml-[45vw] ml-[35vw] px-8 py-2 lg:mt-6 
-              rounded-lg bg-[#B2D7D0] font-extrabold md:text-2xl self-center'
+              rounded-lg bg-[#004040] hover:scale-105 shadow-lg hover:shadow-xl transition-all duration-300 font-extrabold md:text-2xl self-center text-white'
               type="submit">
               SUBMIT
               <input
                 className='hidden'
                 type='submit' />
             </button>
-            <FontAwesomeIcon className={`ml-4 ${submit} text-[#b2d7d0]`} icon={faCircleCheck} />
+            <FontAwesomeIcon className={`ml-4 ${submit} text-[#004040]`} icon={faCircleCheck} />
           </div>
         </form>
         <br />

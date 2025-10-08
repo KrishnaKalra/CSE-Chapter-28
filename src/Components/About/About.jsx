@@ -8,14 +8,15 @@ import {
  faReact,faHtml5,faCss3Alt,faJs,faNode,faGithub
 } from "@fortawesome/free-brands-svg-icons";
 import { SiReact, SiJavascript, SiHtml5, SiCss3, SiGithub, SiTailwindcss, SiNodedotjs, SiVercel, SiMongodb  } from "react-icons/si";
-import krishna from "../../assets/about/krishna.png";
-import vanessa from "../../assets/about/vanessa.png";
-import priyanshu from "../../assets/about/priyanshu.png";
-import kohinoor from "../../assets/about/kohinoor.jpg";
-import partha from "../../assets/about/partha.jpg";
-import shivashish from "../../assets/about/shivashish.png";
-import manasmita from "../../assets/about/masnasmita.jpg";
-import dhairyawan from '../../assets/about/Dhairyawan.jpg';
+const krishna = "https://res.cloudinary.com/diwucid84/image/upload/v1759586822/krishna_sjw1ko.jpg";
+const vanessa = "https://res.cloudinary.com/diwucid84/image/upload/v1759586848/vanessa_kblz0b.jpg";
+const priyanshu = "https://res.cloudinary.com/diwucid84/image/upload/v1759586844/priyanshu_wlquim.jpg";
+const kohinoor = "https://res.cloudinary.com/diwucid84/image/upload/v1759586821/kohinoor_q36qtw.jpg";
+const partha = "https://res.cloudinary.com/diwucid84/image/upload/v1759586843/partha_r6lecj.jpg";
+const shivashish = "https://res.cloudinary.com/diwucid84/image/upload/v1759586845/shivashish_lnm25y.jpg";
+const manasmita = "https://res.cloudinary.com/diwucid84/image/upload/v1759586822/masnasmita_njj2ut.jpg";
+const dhairyawan = 'https://res.cloudinary.com/diwucid84/image/upload/v1759586820/Dhairyawan_tiyiyh.jpg';
+const aman = 'https://res.cloudinary.com/diwucid84/image/upload/v1759586819/aman_nbcjz5.jpg';
 
 function about() {
   return (
@@ -24,16 +25,17 @@ function about() {
     <h1 className=" text-6xl lg:text-9xl mb-4 mr-[10%] ml-[10%] font-bold text-[#002F26] sofia">
   <span>ABOUT US</span>
 </h1>
-<h1 className=" text-[#d0f0ea] ml-[10%] mr-[10%] flex flex-col items-center justify-center gap-5 text-justify">
-<p className="text-3xl sofia lg:text-5xl text-center text-[#004040]">Welcome to CSE Chapter '28</p>
-      <p className="text-lg poppins tracking-[0.018em] lg:text-3xl">
+<h1 className=" text-[#6B8E23] ml-[10%] mr-[10%] flex flex-col items-center justify-center gap-5 text-justify">
+<p className="text-3xl sofia lg:text-5xl text-center text-[#004040]">Welcome to CSE Chapter '29</p>
+      <p className="text-lg mt-10 poppins tracking-[0.018em] lg:text-3xl">
 Crafted with passion and dedication, this website is the result of hard work and creativity from our team.
 We hope this platform serves as a helpful resource for staying connected, informed, and inspired and you find it as exciting and useful as we envisioned!!!
 </p>
 </h1>
     </div>
 <div className=' flex flex-col justify-center items-center mb-[90px]'>
-  <h1 className='text-5xl lg:text-8xl mb-6 mr-[10%] ml-[10%] font-semibold text-white sofia'>Our Team</h1>
+  
+  <h1 className='text-5xl lg:text-7xl  mb-6 mr-[10%] ml-[10%] font-semibold text-[#004040] sofia'>CHAPTER '28 TEAM</h1>
     <div className="cards flex-wrap flex flex-row justify-center gap-10 max-w-[80vw]">
       <AboutCard named="Krishna Kalra" 
         pic={krishna}
@@ -100,9 +102,21 @@ We hope this platform serves as a helpful resource for staying connected, inform
         email="b123072@iiit-bh.ac.in"
       />
     </div>
+    <h1 className='text-5xl mt-20 lg:text-7xl mb-6 mr-[10%] ml-[10%] font-semibold text-[#004040] sofia'>CHAPTER '29 TEAM</h1>
+    <div className="cards flex-wrap flex flex-row justify-center gap-10 max-w-[80vw]">
+      <AboutCard named="Aman Raj" 
+        pic={aman}
+        Instagram="https://www.instagram.com/krishna_kalra_7/"
+        GitHub="https://github.com/KrishnaKalra/"
+        LinkedIn="https://www.linkedin.com/in/krishna-kalra-88aa72286/"
+         email="b124011@iiit-bh.ac.in"
+        work=" Frontend || UI/UX "
+      />
+      
+    </div>
 </div>
-<h1 className='text-4xl lg:text-7xl mb-5 mr-[10%] ml-[10%] text-white sofia'>Tech Stack Used</h1>
-<div className='mr-[10%] ml-[10%] mb-10 flex flex-row justify-between align-middle text-lg gap-[1em] lg:text-4xl flex-nowrap lg:gap-[1.5em] text-[#d0f0ea]'>
+<h1 className='text-4xl lg:text-5xl mb-10 mr-[10%] ml-[10%] text-[#2c3232aa] sofia'>Tech Stack Used</h1>
+<div className='mr-[10%] ml-[10%] mb-10 flex flex-row justify-between align-middle text-lg gap-[1em] lg:text-4xl flex-nowrap lg:gap-[1.5em] text-[#2c3232aa]'>
   <SiReact title="React"/>
   <SiHtml5 title="HTML 5"/>
   <SiCss3 title="CSS 3"/>
