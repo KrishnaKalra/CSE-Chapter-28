@@ -17,7 +17,7 @@ function header() {
     console.log(year);
     let id = user.email.slice(0, 7).toUpperCase();
     const check = await axios.get(
-      "http://localhost:300/api/" + year + "/id?id=" + id
+      "https://cse-chapter-28-server.vercel.app/api/" + year + "/id?id=" + id
     );
     if (check.data.length == 0) {
       try {
