@@ -38,9 +38,9 @@ We hope this platform serves as a helpful resource for staying connected, inform
     <div className="cards flex-wrap flex flex-row justify-center gap-10 max-w-[80vw]">
       <AboutCard named="Aman Raj" 
         pic={aman}
-        Instagram="https://www.instagram.com/krishna_kalra_7/"
-        GitHub="https://github.com/KrishnaKalra/"
-        LinkedIn="https://www.linkedin.com/in/krishna-kalra-88aa72286/"
+        Instagram="https://www.instagram.com/ft.amannn_/"
+        GitHub="https://github.com/consoledotaman/"
+        LinkedIn="https://www.linkedin.com/in/aman-raj-xd/"
          email="b124011@iiit-bh.ac.in"
         work=" Frontend || UI/UX "
       />
