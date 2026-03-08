@@ -70,11 +70,11 @@ const HeaderBlock = () => {
     <h1 className="mb-2 ">
       <img className=" object-cover" src={smalpics.pic1}></img>
     </h1>
-    <p className="mt-5 mb-2 text-center text-4xl text-white solway font-bold uppercase">{title}</p>
+    <p className="mt-5 mb-2 text-center text-4xl text-[#004040] lg:text-white solway font-bold uppercase">{title}</p>
     <div
       id="message"
       rows="8"
-      className="p-2.5 w-full text-xl rounded-lg   focus:border-transparent focus:ring-0 focus:outline-none resize-none placeholder-opacity-100 placeholder-gray-500 lg:bg-[#B2D7D0] lg:bg-opacity-10 text-justify solway text-[#d0f0ea] text-justify-center"
+      className="p-2.5 w-full text-xl rounded-lg   focus:border-transparent focus:ring-0 focus:outline-none resize-none placeholder-opacity-100 placeholder-gray-500 lg:bg-[#B2D7D0] lg:bg-opacity-10 text-justify solway text-[#004040] lg:text-[#d0f0ea] text-justify-center"
       >
        {para}
     </div>
