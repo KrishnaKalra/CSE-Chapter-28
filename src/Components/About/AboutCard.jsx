@@ -25,22 +25,22 @@ function AboutCard(props) {
               </div>
               <div className="flex w-[210px] justify-around">
                 {(props.Instagram)?
-                <a href={props.Instagram}  >
+                <a href={props.Instagram} target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon className="size-7 hover:text-[#004040] duration-00 ease-in-out hover:scale-[1.1] transform" icon={faInstagram} title="Instagram"/>
                 </a>
                 :''}
                 {(props.GitHub)?
-                <a href={props.GitHub}  >
+                <a  href={props.GitHub} target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon className="size-7 hover:text-[#004040] duration-00 ease-in-out hover:scale-[1.1] transform " icon={faGithub} title="GitHub"/>
                 </a>
                 :''}
                 {(props.LinkedIn)?
-                <a href={props.LinkedIn}  >
+                <a href={props.LinkedIn} target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon className="size-7 hover:text-[#004040] duration-00 ease-in-out hover:scale-[1.1] transform" icon={faLinkedin} title="LinkedIn"/>
                 </a>
                 :''}
                 {(props.email)?
-                <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${props.email}`}>
+                <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${props.email}`} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="size-7 hover:text-[#004040]] duration-00 ease-in-out hover:scale-[1.1] transform" icon={faEnvelope} title={"Mail "+ props.email}/>
                 </a>
                 :''}
